@@ -10,7 +10,4 @@ class Car(Serviceable):
     battery: Battery
 
     def needs_service(self):
-        if self.battery.needs_service() or self.engine.needs_service():
-            return True
-        else:
-            return False
+        return self.battery.needs_service() or self.engine.needs_service()
