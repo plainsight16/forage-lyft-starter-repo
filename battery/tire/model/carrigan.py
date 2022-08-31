@@ -1,11 +1,10 @@
-from array import array
 from dataclasses import dataclass
 from tire.tire import Tire
 
 
 @dataclass
 class Carrigan(Tire):
-    wear_condition: list
+    tear_wear: list
 
     def needs_service(self):
         for condition in self.wear_condition:
